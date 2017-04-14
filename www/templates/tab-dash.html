@@ -1,0 +1,747 @@
+<script language="javascript" type="text/javascript">
+  function esconde(obj){
+    //acá va el código para ocultar y hacer visibles los diferentes objetos
+  }
+</script>
+
+
+<ion-view style="background-size: 100%; background-image: url('img/fondoLibrosOscuro.jpg');background-position: center center;background-repeat: no-repeat;
+    background-attachment: fixed;">
+  <ion-content has-header="true" padding="true" >
+
+  <div id="DatosPersonalesGenerales">
+  <center>
+    <br>
+    <br>
+    <h2><b><FONT face="Comic Sans MS" color="Lime">Ingrese sus datos personales</FONT></b></h2>
+    <br> 
+    <table border="2px">
+      <tr>
+        <td width=80%>
+         <center>
+          <b><FONT face="Comic Sans MS" color="Lime"> Nombre y Apellido</FONT></b>
+          <br>
+          <input type="text" id="Nombre" placeholder="Ingrese su Nombre y apellido"  width= "70%" height="70%" ng-model="Nombre" style="height:100%;width:100%;border:1px;font-size:16px;">           
+
+          <br>
+
+            <b><FONT face="Comic Sans MS" color="Lime"> Mail o teléfono</FONT></b>
+            <br>
+            <input type="text" id="MailTelefono" placeholder="Ingrese su Mail o Teléfono"  width= "70%" height="70%" ng-model="MailTelefono" style="height:100%;width:100%;border:1px;font-size:16px" >
+
+          <br>
+            <b><FONT face="Comic Sans MS" color="Lime">Edad</FONT></b>
+            <br>
+            <select name="Edad" id="Edad" ng-model="Edad" size="1" style="height:100%;width:100%;border:1px;font-size:16px"> 
+              <option selected value="">--Elige opcion--</option>
+              <OPTION VALUE="20">20</OPTION>                    
+              <OPTION VALUE="20">30</OPTION>                    
+              <OPTION VALUE="20">40</OPTION>                    
+              <OPTION VALUE="20">50</OPTION>                    
+            </select> 
+          <br> 
+          <br>
+            <b><FONT face="Comic Sans MS" color="Lime">Entidad</FONT></b>
+            <br>
+            <select name="Entidad" id="Entidad" ng-model="Entidad" size="1" style="height:100%;width:100%;border:1px;font-size:16px"> 
+              <option selected value="">--Elige opcion--</option>
+              <OPTION VALUE="Docente">Docente</OPTION>                    
+              <OPTION VALUE="Padre">Padre</OPTION>                    
+           </select>  
+         </center>        
+        </td>      
+      </tr>    
+    </table>
+  </center>
+
+<br>
+<br>
+  <button id="AceptarDatosGenerales" ng-model="AceptarDatosGenerales" class="button button-assertive button-large button-block">Aceptar</button>
+
+</div>
+
+
+    <div id="DatosPersonalesDocentes">
+    <center>
+    <br>
+    <br>
+    <h2><b><FONT face="Comic Sans MS" color="Lime">Ingrese datos de Docente</FONT></b></h2>
+    <br>
+      
+      <table border="2px">      
+        <tr>
+          <td>
+          <center>
+            <b><FONT face="Comic Sans MS" color="Lime"> Nombre de la  institución principal donde trabaja </FONT></b>
+            <input type="text" id="EscuelaDocente" placeholder="Ingrese nombre de la institución"  width= "70%" height="70%" ng-model="EscuelaDocente" style="align:center;height:80%;width:80%;border:1px;font-size:16px" >
+            <br>
+            <b><FONT face="Comic Sans MS" color="Lime">Provincia de Buenos Aires</FONT></b>
+            <br>
+              <select name="ZonaProvinciaBsAsDocente" id="ZonaProvinciaBsAsDocente" ng-model="ZonaProvinciaBsAsDocente" size="1" style="align:center;height:80%;width:80%;border:1px;font-size:16px"> 
+                <option selected value="">--Elige opcion--</option>
+                <OPTION VALUE="CABA">CABA</OPTION>                    
+                <OPTION VALUE="GBANorte">GBA Norte</OPTION>                    
+                <OPTION VALUE="GBASur">GBA Sur</OPTION>                    
+                <OPTION VALUE="GBAEste">GBA Este</OPTION>                    
+                <OPTION VALUE="GBAOeste">GBA Oeste</OPTION>                    
+                <OPTION VALUE="Interior">Interior</OPTION>  
+             </select>
+          <br>
+          <br>
+              <b><FONT face="Comic Sans MS" color="Lime">Otra Provincia</FONT></b>
+              <br>
+              <select name="OtraProvinciaDocente" id="OtraProvinciaDocente" ng-model="OtraProvinciaDocente" size="1" style="align:center;height:80%;width:80%;border:1px;font-size:16px"> 
+                <option selected value="">--Elige opcion--</option>
+                <OPTION VALUE="Catamarca">Catamarca</OPTION>                    
+                <OPTION VALUE="Chaco">Chaco</OPTION>                    
+                <OPTION VALUE="Chubut">Chubut</OPTION>                    
+                <OPTION VALUE="Cordoba">Cordoba</OPTION>                    
+                <OPTION VALUE="Corrientes">Corrientes</OPTION>                    
+                <OPTION VALUE="EntreRios">Entre Rios</OPTION>  
+                <OPTION VALUE="Formosa">Formosa</OPTION>                    
+                <OPTION VALUE="Jujuy">Jujuy</OPTION>                    
+                <OPTION VALUE="LaPampa">La Pampa</OPTION>                    
+                <OPTION VALUE="LaRioja">La Rioja</OPTION>                    
+                <OPTION VALUE="Mendoza">Mendoza</OPTION>                    
+                <OPTION VALUE="Misiones">Misiones</OPTION>
+                <OPTION VALUE="Neuquen">Neuquén</OPTION>                    
+                <OPTION VALUE="RioNegro">Rio Negro</OPTION>                    
+                <OPTION VALUE="Salta">Salta</OPTION>                    
+                <OPTION VALUE="SanJuan">San Juan</OPTION>                    
+                <OPTION VALUE="SanLuis">San Luis</OPTION>                    
+                <OPTION VALUE="SantaCruz">Santa Cruz</OPTION>
+                <OPTION VALUE="SantaFe">Santa Fe</OPTION>                    
+                <OPTION VALUE="SantiagoDelEstero">Santiago del Estero</OPTION>                    
+                <OPTION VALUE="TierraDelFuego">Tierra del Fuego, Antártida e Isla del Atlántico Sur</OPTION>
+                <OPTION VALUE="Tucuman">Tucumán</OPTION>
+             </select>
+          <br>
+          <br>
+             <b><FONT face="Comic Sans MS" color="Lime">Zona de Otra Provincia</FONT></b>
+             <br>
+              <select name="ZonaOtraProvinciaDocente" id="ZonaOtraProvinciaDocente" ng-model="ZonaOtraProvinciaDocente" size="1" style="align:center;height:80%;width:80%;border:1px;font-size:16px"> 
+                <option selected value="">--Elige opcion--</option>
+                <OPTION VALUE="Norte">Norte</OPTION>                    
+                <OPTION VALUE="Noroeste">Noroeste</OPTION>                    
+                <OPTION VALUE="Noreste">Noreste</OPTION>                    
+                <OPTION VALUE="Centro">Centro</OPTION>                    
+                <OPTION VALUE="Sur">Sur</OPTION>        
+             </select>
+          <br>
+          <br>
+             <b><FONT face="Comic Sans MS" color="Lime">Establecimiento de Educación</FONT></b>
+             <br>
+              <select name="EstablecimientoDocente" id="EstablecimientoDocente" ng-model="EstablecimientoDocente" size="1" style="align:center;height:80%;width:80%;border:1px;font-size:16px"> 
+                <option selected value="">--Elige opcion--</option>
+                <OPTION VALUE="Privada">Privada</OPTION>                    
+                <OPTION VALUE="Publica">Pública</OPTION>                    
+                <OPTION VALUE="Subvencionada">Subvencionada</OPTION>                    
+                <OPTION VALUE="Laica">Laica</OPTION>                    
+                <OPTION VALUE="Religiosa">Religiosa</OPTION>        
+             </select>
+            </center>
+          </td>
+          </tr>  
+          </table>
+          </center>
+          <br>
+          <center>
+          <b><FONT face="Comic Sans MS" color="Lime">Cargo que ocupa actualmente</FONT></b>
+          <br>
+          <br>
+          <table>
+          <tr>  
+              <td width="20%">
+               <center>
+                <input type="checkbox" class="checkboxGeneral" id="CargoDocenteDocente" ng-true-value=1 ng-false-value=0 ng-model="CargoDocenteDocente"><FONT face="Comic Sans MS" color="White"> Docente </FONT>
+               </center>        
+              </td>
+
+              <td width="20%">
+
+                <input type="checkbox" class="checkboxGeneral" id="CargoDirectivoDocente" ng-true-value=1 ng-false-value=0 ng-model="CargoDirectivoDocente"><FONT face="Comic Sans MS" color="White"> Directivo/a </FONT>
+ 
+              </td>
+
+              <td width="20%">
+
+                <input type="checkbox" class="checkboxGeneral" id="CargoBibliotecarioDocente" ng-true-value=1 ng-false-value=0 ng-model="CargoBibliotecarioDocente"><FONT face="Comic Sans MS" color="White"> Bibliotecario/a </FONT>
+       
+              </td>
+
+              <td width="20%">
+
+                <input type="checkbox" class="checkboxGeneral" id="CargoOtroDocente" ng-true-value=1 ng-false-value=0 ng-model="CargoOtroDocente"><FONT face="Comic Sans MS" color="White"> Otro </FONT>
+       
+              </td>
+          </tr>        
+      </table>
+      <br>
+       <input type="text" id="DescripcionCargoOtroDocente" placeholder="Ingrese otros Cargos"  width= "70%" height="70%" ng-model="DescripcionCargoOtroDocente" style="align:center;height:70%;width:70%;border:1px;font-size:16px" >
+
+      </center>
+      <br>
+      <center>
+          <b><FONT face="Comic Sans MS" color="Lime">Nivel en el que se desenvuelve</FONT></b>
+          <br>
+          <br>
+          <table>
+          <tr>  
+              <td width="20%">
+               <center>
+                <input type="checkbox" class="checkboxGeneral" id="NivelInicialDocente" ng-true-value=1 ng-false-value=0 ng-model="NivelInicialDocente"><FONT face="Comic Sans MS" color="White"> Inicial </FONT>
+               </center>        
+              </td>
+
+              <td width="20%">
+
+                <input type="checkbox" class="checkboxGeneral" id="NivelPrimerCicloDocente" ng-true-value=1 ng-false-value=0 ng-model="NivelPrimerCicloDocente"><FONT face="Comic Sans MS" color="White"> Primer Ciclo </FONT>
+ 
+              </td>
+
+              <td width="20%">
+
+                <input type="checkbox" class="checkboxGeneral" id="NivelSegundoCicloDocente" ng-true-value=1 ng-false-value=0 ng-model="NivelSegundoCicloDocente"><FONT face="Comic Sans MS" color="White"> Segundo Ciclo </FONT>
+       
+              </td>
+
+              <td width="20%">
+                <input type="checkbox" class="checkboxGeneral" id="NivelSecundariaBasicoDocente" ng-true-value=1 ng-false-value=0 ng-model="NivelSecundariaBasicoDocente"><FONT face="Comic Sans MS" color="White"> Secundaria Ciclo Básico </FONT>
+       
+              </td>
+              <td width="20%">
+                <input type="checkbox" class="checkboxGeneral" id="NivelSecundariaSuperiorDocente" ng-true-value=1 ng-false-value=0 ng-model="NivelSecundariaSuperiorDocente"><FONT face="Comic Sans MS" color="White"> Secundaria Ciclo Superior </FONT>
+       
+              </td>
+          </tr>        
+      </table>
+
+      </center>
+
+<br>
+       <center>
+          <b><FONT face="Comic Sans MS" color="Lime">Áreas en la que se desenvuelve</FONT></b>
+          <br>
+          <br>
+          <table>
+          <tr>  
+              <td width="20%">
+               <center>
+                <input type="checkbox" class="checkboxGeneral" id="AreaCienciasSocialesDocente" ng-true-value=1 ng-false-value=0 ng-model="AreaCienciasSocialesDocente"><FONT face="Comic Sans MS" color="White"> Ciencias Sociales </FONT>
+               </center>        
+              </td>
+
+              <td width="20%">
+
+                <input type="checkbox" class="checkboxGeneral" id="AreaCienciasNaturalesDocente" ng-true-value=1 ng-false-value=0 ng-model="AreaCienciasNaturalesDocente"><FONT face="Comic Sans MS" color="White"> Ciencias Naturales </FONT>
+ 
+              </td>
+
+              <td width="20%">
+
+                <input type="checkbox" class="checkboxGeneral" id="AreaArteDocente" ng-true-value=1 ng-false-value=0 ng-model="AreaArteDocente"><FONT face="Comic Sans MS" color="White"> Arte </FONT>
+       
+              </td>
+
+              <td width="20%">
+                <input type="checkbox" class="checkboxGeneral" id="AreaLenguaDocente" ng-true-value=1 ng-false-value=0 ng-model="AreaLenguaDocente"><FONT face="Comic Sans MS" color="White"> Lengua y Literatura </FONT>
+              </td> 
+
+              <td width="20%">
+                <input type="checkbox" class="checkboxGeneral" id="AreaOtraDocente" ng-true-value=1 ng-false-value=0 ng-model="AreaOtraDocente"><FONT face="Comic Sans MS" color="White" otra </FONT>
+              </td>             
+          </tr>        
+      </table>
+
+        <input type="text" id="AreaDescripcionOtraDocente" placeholder="Ingrese otra Materia"  width= "70%" height="70%" ng-model="AreaDescripcionOtraDocente" style="align:center;height:70%;width:70%;border:1px;font-size:16px" >
+
+      </center>
+
+<br>
+       <center>
+          <b><FONT face="Comic Sans MS" color="Lime">¿Qué redes utiliza habitualmente? </FONT></b>
+          <br>
+          <br>
+          <table>
+          <tr>  
+              <td width="20%">
+               <center>
+                <input type="checkbox" class="checkboxGeneral" id="RedesFacebookDocente" ng-true-value=1 ng-false-value=0 ng-model="RedesFacebookDocente"><FONT face="Comic Sans MS" color="White"> Facebook  </FONT>
+               </center>        
+              </td>
+
+              <td width="20%">
+
+                <input type="checkbox" class="checkboxGeneral" id="RedesInstagramDocente" ng-true-value=1 ng-false-value=0 ng-model="RedesInstagramDocente"><FONT face="Comic Sans MS" color="White"> Instagram </FONT>
+ 
+              </td>
+
+              <td width="20%">
+
+                <input type="checkbox" class="checkboxGeneral" id="RedesTwitterDocente" ng-true-value=1 ng-false-value=0 ng-model="RedesTwitterDocente"><FONT face="Comic Sans MS" color="White"> Twitter </FONT>
+       
+              </td>
+
+              <td width="20%">
+                <input type="checkbox" class="checkboxGeneral" id="RedesPinterestDocente" ng-true-value=1 ng-false-value=0 ng-model="RedesPinterestDocente"><FONT face="Comic Sans MS" color="White"> Pinterest </FONT>
+              </td> 
+
+              <td width="20%">
+                <input type="checkbox" class="checkboxGeneral" id="RedesYouTubeDocente" ng-true-value=1 ng-false-value=0 ng-model="RedesYouTubeDocente"><FONT face="Comic Sans MS" color="White"> You Tube </FONT>
+              </td>             
+          </tr>        
+      </table>
+
+      </center>
+      <br>
+      <br>
+      <button id="AceptarDatosDocentes" ng-model="AceptarDatosDocentes" class="button button-assertive button-large button-block">Aceptar</button>
+
+    </div>
+
+
+  <div id="EncuentaDocentes">
+  <center>
+  <br>
+    <br>
+    <h2><b><FONT face="Comic Sans MS" color="Lime">Encuesta de Docente</FONT></b></h2>
+    <br>
+  
+    <b><FONT face="Comic Sans MS" color="Lime">¿Utiliza libro de texto (manuales) en el área de lengua y literatura?</FONT></b>
+    <br>
+    <select name="EncuestaUtilizaManualesDocente" id="EncuestaUtilizaManualesDocente" ng-model="EncuestaUtilizaManualesDocente" size="1" style="height:20%;width:20%;border:1px;font-size:16px"> 
+      <option selected value="">--Elige opcion--</option>
+      <OPTION VALUE="Si">Si</OPTION>                    
+      <OPTION VALUE="No">No</OPTION>                          
+    </select> 
+<br>
+    <br>
+    <b><FONT face="Comic Sans MS" color="Lime">¿Cuántos libros forman parte del plan lector anual?</FONT></b>
+    <br>
+    <select name="EncuestaCantidadLibrosPlanAnualDocente" id="EncuestaCantidadLibrosPlanAnualDocente" ng-model="EncuestaCantidadLibrosPlanAnualDocente" size="1" style="height:20%;width:20%;border:1px;font-size:16px"> 
+      <option selected value="">--Elige opcion--</option>
+      <OPTION VALUE="1">1</OPTION>                    
+      <OPTION VALUE="2">2</OPTION>                          
+      <OPTION VALUE="3">3</OPTION>                    
+      <OPTION VALUE="4">4</OPTION>                          
+      <OPTION VALUE="Mas">Más</OPTION>                          
+    </select> 
+<br>
+    <br>
+    <b><FONT face="Comic Sans MS" color="Lime">¿Cuántos libros del plan lector pertenecen a la literatura clásica?</FONT></b>
+    <br>
+    <select name="EncuestaCantidadLibrosLiteraturaClasicaDocente" id="EncuestaCantidadLibrosLiteraturaClasicaDocente" ng-model="EncuestaCantidadLibrosLiteraturaClasicaDocente" size="1" style="height:20%;width:20%;border:1px;font-size:16px"> 
+      <option selected value="">--Elige opcion--</option>
+      <OPTION VALUE="1">1</OPTION>                    
+      <OPTION VALUE="2">2</OPTION>                          
+      <OPTION VALUE="3">3</OPTION>                    
+      <OPTION VALUE="4">4</OPTION>                          
+      <OPTION VALUE="Mas">Más</OPTION>                          
+    </select> 
+<br>
+    <br>
+    <b><FONT face="Comic Sans MS" color="Lime">¿Cuántos a autores contemporáneos?</FONT></b>
+    <br>
+    <select name="EncuestaCantidadAutoresContemporaneosDocente" id="EncuestaCantidadAutoresContemporaneosDocente" ng-model="EncuestaCantidadAutoresContemporaneosDocente" size="1" style="height:20%;width:20%;border:1px;font-size:16px"> 
+      <option selected value="">--Elige opcion--</option>
+      <OPTION VALUE="1">1</OPTION>                    
+      <OPTION VALUE="2">2</OPTION>                          
+      <OPTION VALUE="3">3</OPTION>                    
+      <OPTION VALUE="4">4</OPTION>                          
+      <OPTION VALUE="Mas">Más</OPTION>                          
+    </select> 
+<br>
+    <br>
+    <b><FONT face="Comic Sans MS" color="Lime">¿Cuáles son los géneros o temáticas que considera deben estar presentes en el plan lector?</FONT></b>
+    <br>
+    <br>
+          <table>
+          <tr>  
+              <td width="20%">
+               <center>
+                <input type="checkbox" class="checkboxGeneral" id="EncuestaGeneroMitoDocente" ng-true-value=1 ng-false-value=0 ng-model="EncuestaGeneroMitoDocente"><FONT face="Comic Sans MS" color="White"> Mitos  </FONT>
+               </center>        
+              </td>
+
+              <td width="20%">
+
+                <input type="checkbox" class="checkboxGeneral" id="EncuestaGeneroLeyendaDocente" ng-true-value=1 ng-false-value=0 ng-model="EncuestaGeneroLeyendaDocente"><FONT face="Comic Sans MS" color="White"> Leyendas </FONT>
+ 
+              </td>
+
+              <td width="20%">
+
+                <input type="checkbox" class="checkboxGeneral" id="EncuestaGeneroTeatroDocente" ng-true-value=1 ng-false-value=0 ng-model="EncuestaGeneroTeatroDocente"><FONT face="Comic Sans MS" color="White"> Teatro </FONT>
+       
+              </td>
+
+              <td width="20%">
+                <input type="checkbox" class="checkboxGeneral" id="EncuestaGeneroPoesiaDocente" ng-true-value=1 ng-false-value=0 ng-model="EncuestaGeneroPoesiaDocente"><FONT face="Comic Sans MS" color="White"> Poesía </FONT>
+              </td> 
+          </tr> 
+          <tr>
+              <td width="20%">
+               <center>
+                <input type="checkbox" class="checkboxGeneral" id="EncuestaGeneroPolicialDocente" ng-true-value=1 ng-false-value=0 ng-model="EncuestaGeneroPolicialDocente"><FONT face="Comic Sans MS" color="White"> Policiales  </FONT>
+               </center>        
+              </td>
+
+              <td width="20%">
+
+                <input type="checkbox" class="checkboxGeneral" id="EncuestaGeneroAventuraDocente" ng-true-value=1 ng-false-value=0 ng-model="EncuestaGeneroAventuraDocente"><FONT face="Comic Sans MS" color="White"> Aventuras </FONT>
+ 
+              </td>
+
+              <td width="20%">
+
+                <input type="checkbox" class="checkboxGeneral" id="EncuestaGeneroHumorDocente" ng-true-value=1 ng-false-value=0 ng-model="EncuestaGeneroHumorDocente"><FONT face="Comic Sans MS" color="White"> Humor </FONT>
+       
+              </td>
+
+              <td width="20%">
+                <input type="checkbox" class="checkboxGeneral" id="EncuestaGeneroClasicoDocente" ng-true-value=1 ng-false-value=0 ng-model="EncuestaGeneroClasicoDocente"><FONT face="Comic Sans MS" color="White"> Clásicos </FONT>
+              </td>         
+
+          </tr>
+                 
+      </table> 
+    <br>
+        <b><FONT face="Comic Sans MS" color="Lime">¿Utilizan recursos digitales para la enseñanza en el aula?</FONT></b>
+    <br>
+    <select name="EncuestaUtilizaRecursosDocente" id="EncuestaUtilizaRecursosDocente" ng-model="EncuestaUtilizaRecursosDocente" size="1" style="height:20%;width:20%;border:1px;font-size:16px"> 
+      <option selected value="">--Elige opcion--</option>
+      <OPTION VALUE="Si">Si</OPTION>                    
+      <OPTION VALUE="No">No</OPTION>                          
+    </select>
+
+    </center>
+<br>
+<br>
+<button id="AceptarEncuestaDocente" ng-model="AceptarEncuestaDocente" class="button button-assertive button-large button-block">Aceptar</button>
+
+  </div>
+
+
+  <div id="DatosPersonalesPadre">
+  <center>
+      <br>
+    <br>
+    <h2><b><FONT face="Comic Sans MS" color="Lime">Ingrese datos de Padre</FONT></b></h2>
+    <br>
+      
+      <table border="2px">      
+        <tr>
+          <td>
+          <center>           
+            <b><FONT face="Comic Sans MS" color="Lime">Provincia de Buenos Aires</FONT></b>
+            <br>
+              <select name="ZonaProvinciaBsAsPadre" id="ZonaProvinciaBsAsPadre" ng-model="ZonaProvinciaBsAsPadre" size="1" style="align:center;height:80%;width:80%;border:1px;font-size:16px"> 
+                <option selected value="">--Elige opcion--</option>
+                <OPTION VALUE="CABA">CABA</OPTION>                    
+                <OPTION VALUE="GBANorte">GBA Norte</OPTION>                    
+                <OPTION VALUE="GBASur">GBA Sur</OPTION>                    
+                <OPTION VALUE="GBAEste">GBA Este</OPTION>                    
+                <OPTION VALUE="GBAOeste">GBA Oeste</OPTION>                    
+                <OPTION VALUE="Interior">Interior</OPTION>  
+             </select>
+          <br>
+          <br>
+              <b><FONT face="Comic Sans MS" color="Lime">Otra Provincia</FONT></b>
+              <br>
+              <select name="OtraProvinciaPadres" id="OtraProvinciaPadres" ng-model="OtraProvinciaPadres" size="1" style="align:center;height:80%;width:80%;border:1px;font-size:16px"> 
+                <option selected value="">--Elige opcion--</option>
+                <OPTION VALUE="Catamarca">Catamarca</OPTION>                    
+                <OPTION VALUE="Chaco">Chaco</OPTION>                    
+                <OPTION VALUE="Chubut">Chubut</OPTION>                    
+                <OPTION VALUE="Cordoba">Cordoba</OPTION>                    
+                <OPTION VALUE="Corrientes">Corrientes</OPTION>                    
+                <OPTION VALUE="EntreRios">Entre Rios</OPTION>  
+                <OPTION VALUE="Formosa">Formosa</OPTION>                    
+                <OPTION VALUE="Jujuy">Jujuy</OPTION>                    
+                <OPTION VALUE="LaPampa">La Pampa</OPTION>                    
+                <OPTION VALUE="LaRioja">La Rioja</OPTION>                    
+                <OPTION VALUE="Mendoza">Mendoza</OPTION>                    
+                <OPTION VALUE="Misiones">Misiones</OPTION>
+                <OPTION VALUE="Neuquen">Neuquén</OPTION>                    
+                <OPTION VALUE="RioNegro">Rio Negro</OPTION>                    
+                <OPTION VALUE="Salta">Salta</OPTION>                    
+                <OPTION VALUE="SanJuan">San Juan</OPTION>                    
+                <OPTION VALUE="SanLuis">San Luis</OPTION>                    
+                <OPTION VALUE="SantaCruz">Santa Cruz</OPTION>
+                <OPTION VALUE="SantaFe">Santa Fe</OPTION>                    
+                <OPTION VALUE="SantiagoDelEstero">Santiago del Estero</OPTION>                    
+                <OPTION VALUE="TierraDelFuego">Tierra del Fuego, Antártida e Isla del Atlántico Sur</OPTION>
+                <OPTION VALUE="Tucuman">Tucumán</OPTION>
+             </select>
+          <br>
+          <br>
+             <b><FONT face="Comic Sans MS" color="Lime">Zona de Otra Provincia</FONT></b>
+             <br>
+              <select name="ZonaOtraProvinciaPadres" id="ZonaOtraProvinciaPadres" ng-model="ZonaOtraProvinciaPadres" size="1" style="align:center;height:80%;width:80%;border:1px;font-size:16px"> 
+                <option selected value="">--Elige opcion--</option>
+                <OPTION VALUE="Norte">Norte</OPTION>                    
+                <OPTION VALUE="Noroeste">Noroeste</OPTION>                    
+                <OPTION VALUE="Noreste">Noreste</OPTION>                    
+                <OPTION VALUE="Centro">Centro</OPTION>                    
+                <OPTION VALUE="Sur">Sur</OPTION>        
+             </select>
+          <br>
+          <br>
+
+             <b><FONT face="Comic Sans MS" color="Lime">Estudios finalizados</FONT></b>
+             <br>
+              <select name="EstudiosPadres" id="EstudiosPadres" ng-model="EstudiosPadres" size="1" style="align:center;height:80%;width:80%;border:1px;font-size:16px"> 
+                <option selected value="">--Elige opcion--</option>
+                <OPTION VALUE="Primario">Primario</OPTION>                    
+                <OPTION VALUE="Secundario">Secundario</OPTION>                    
+                <OPTION VALUE="Terciario">Terciario </OPTION>                    
+                <OPTION VALUE="Universitario">Universitario</OPTION>                    
+             </select>
+
+            </center>
+          </td>
+          </tr>  
+          </table>
+          </center>
+
+        <br>
+        <center>
+          <b><FONT face="Comic Sans MS" color="Lime">¿Qué redes utiliza habitualmente? </FONT></b>
+          <br>
+          <br>
+          <table>
+          <tr>  
+              <td width="20%">
+               <center>
+                <input type="checkbox" class="checkboxGeneral" id="RedesFacebookPadres" ng-true-value=1 ng-false-value=0 ng-model="RedesFacebookPadres"><FONT face="Comic Sans MS" color="White"> Facebook  </FONT>
+               </center>        
+              </td>
+
+              <td width="20%">
+
+                <input type="checkbox" class="checkboxGeneral" id="RedesInstagramPadres" ng-true-value=1 ng-false-value=0 ng-model="RedesInstagramPadres"><FONT face="Comic Sans MS" color="White"> Instagram </FONT>
+ 
+              </td>
+
+              <td width="20%">
+
+                <input type="checkbox" class="checkboxGeneral" id="RedesTwitterPadres" ng-true-value=1 ng-false-value=0 ng-model="RedesTwitterPadres"><FONT face="Comic Sans MS" color="White"> Twitter </FONT>
+       
+              </td>
+
+              <td width="20%">
+                <input type="checkbox" class="checkboxGeneral" id="RedesPinterestPadres" ng-true-value=1 ng-false-value=0 ng-model="RedesPinterestPadres"><FONT face="Comic Sans MS" color="White"> Pinterest </FONT>
+              </td> 
+
+              <td width="20%">
+                <input type="checkbox" class="checkboxGeneral" id="RedesYouTubePadres" ng-true-value=1 ng-false-value=0 ng-model="RedesYouTubePadres"><FONT face="Comic Sans MS" color="White"> You Tube </FONT>
+              </td>             
+          </tr>        
+          </table>
+        </center>
+        <br>
+      <br>
+      <button id="AceptarDatosPadres" ng-model="AceptarDatosPadres" class="button button-assertive button-large button-block">Aceptar</button>
+  </div>
+
+<div id="EncuentaPadres">
+ <center>
+  <br>
+    <br>
+    <h2><b><FONT face="Comic Sans MS" color="Lime">Encuesta de Padre</FONT></b></h2>
+    <br>
+ 
+
+    <br>
+    <b><FONT face="Comic Sans MS" color="Lime">¿En que rango de edad se encuentran sus hijos?</FONT></b>
+    <br>
+    <br>
+          <table>
+          <tr>  
+              <td width="20%">
+               <center>
+                <input type="checkbox" class="checkboxGeneral" id="EncuestaRangoEdad0a12Padres" ng-true-value=1 ng-false-value=0 ng-model="EncuestaRangoEdad0a12Padres"><FONT face="Comic Sans MS" color="White"> 0-12 meses  </FONT>
+               </center>        
+              </td>
+
+              <td width="20%">
+
+                <input type="checkbox" class="checkboxGeneral" id="EncuestaRangoEdad2a3Padres" ng-true-value=1 ng-false-value=0 ng-model="EncuestaRangoEdad2a3Padres"><FONT face="Comic Sans MS" color="White"> 2-3 años </FONT>
+ 
+              </td>
+
+              <td width="20%">
+
+                <input type="checkbox" class="checkboxGeneral" id="EncuestaRangoEdad4a5Padres" ng-true-value=1 ng-false-value=0 ng-model="EncuestaRangoEdad4a5Padres"><FONT face="Comic Sans MS" color="White"> 4-5 años </FONT>
+       
+              </td>
+
+              <td width="20%">
+                <input type="checkbox" class="checkboxGeneral" id="EncuestaRangoEdad6a7Padres" ng-true-value=1 ng-false-value=0 ng-model="EncuestaRangoEdad6a7Padres"><FONT face="Comic Sans MS" color="White"> 6-7 años </FONT>
+              </td> 
+          </tr> 
+          <tr>
+              <td width="20%">
+               <center>
+                <input type="checkbox" class="checkboxGeneral" id="EncuestaRangoEdad8a9Padres" ng-true-value=1 ng-false-value=0 ng-model="EncuestaRangoEdad8a9Padres"><FONT face="Comic Sans MS" color="White"> 8-9 años  </FONT>
+               </center>        
+              </td>
+
+              <td width="20%">
+
+                <input type="checkbox" class="checkboxGeneral" id="EncuestaRangoEdad10a12Padres" ng-true-value=1 ng-false-value=0 ng-model="EncuestaRangoEdad10a12Padres"><FONT face="Comic Sans MS" color="White"> 10-12 años </FONT>
+ 
+              </td>
+
+              <td width="20%">
+                <input type="checkbox" class="checkboxGeneral" id="EncuestaRangoEdad13a15Padres" ng-true-value=1 ng-false-value=0 ng-model="EncuestaRangoEdad13a15Padres"><FONT face="Comic Sans MS" color="White"> 13-15 años </FONT>
+       
+              </td>
+              <td width="20%">
+                <input type="checkbox" class="checkboxGeneral" id="EncuestaRangoEdadMayor16Padres" ng-true-value=1 ng-false-value=0 ng-model="EncuestaRangoEdadMayor16Padres"><FONT face="Comic Sans MS" color="White"> mayor de 16 </FONT>
+              </td>  
+          </tr>                 
+      </table> 
+    <br>
+    <b><FONT face="Comic Sans MS" color="Lime">¿Compra libros a sus hijos?</FONT></b>
+    <br>
+    <select name="EncuestaCompraLibrosPadres" id="EncuestaCompraLibrosPadres" ng-model="EncuestaCompraLibrosPadres" size="1" style="height:20%;width:20%;border:1px;font-size:16px"> 
+      <option selected value="">--Elige opcion--</option>
+      <OPTION VALUE="Si">Si</OPTION>                    
+      <OPTION VALUE="No">No</OPTION>                          
+    </select> 
+    <br>
+    <br>
+    <b><FONT face="Comic Sans MS" color="Lime">¿Cuántos libros leen sus hijos, fuera de los escolares, en el año? </FONT></b>
+    <br>
+    <select name="EncuestaCantidadLibrosPlanAnualDocente" id="EncuestaCantidadLibrosPlanAnualDocente" ng-model="EncuestaCantidadLibrosPlanAnualDocente" size="1" style="height:20%;width:20%;border:1px;font-size:16px"> 
+      <option selected value="">--Elige opcion--</option>
+      <OPTION VALUE="Ninguno">Ninguno</OPTION>
+      <OPTION VALUE="Entre2y3">Entre 2 y 3</OPTION>                    
+      <OPTION VALUE="Entre4y6">Entre 4 y 6</OPTION>                          
+      <OPTION VALUE="Mas6">Más de 6</OPTION>                          
+    </select> 
+    <br>
+    <br>
+          <b><FONT face="Comic Sans MS" color="Lime">¿Dónde los adquiere principalmente? </FONT></b>
+          <br>
+          <br>
+          <table>
+          <tr>  
+              <td width="20%">
+               <center>
+                <input type="checkbox" class="checkboxGeneral" id="LibreriasPadres" ng-true-value=1 ng-false-value=0 ng-model="LibreriasPadres"><FONT face="Comic Sans MS" color="White"> Librerías   </FONT>
+               </center>        
+              </td>
+
+              <td width="20%">
+
+                <input type="checkbox" class="checkboxGeneral" id="SupermercadosPadres" ng-true-value=1 ng-false-value=0 ng-model="SupermercadosPadres"><FONT face="Comic Sans MS" color="White"> Supermercados </FONT>
+ 
+              </td>
+
+              <td width="20%">
+
+                <input type="checkbox" class="checkboxGeneral" id="OnLinePadres" ng-true-value=1 ng-false-value=0 ng-model="OnLinePadres"><FONT face="Comic Sans MS" color="White"> On line </FONT>
+       
+              </td>
+
+              <td width="20%">
+                <input type="checkbox" class="checkboxGeneral" id="otrosPadres" ng-true-value=1 ng-false-value=0 ng-model="otrosPadres"><FONT face="Comic Sans MS" color="White"> Otros </FONT>
+              </td>          
+          </tr>        
+          </table>
+
+
+  <br>
+    <b><FONT face="Comic Sans MS" color="Lime">¿Cuáles son los libros más solicitados por sus hijos?</FONT></b>
+    <br>
+    <br>
+          <table>
+          <tr>  
+              <td width="20%">
+               <center>
+                <input type="checkbox" class="checkboxGeneral" id="EncuestaLibrosActividadesPadres" ng-true-value=1 ng-false-value=0 ng-model="EncuestaLibrosActividadesPadres"><FONT face="Comic Sans MS" color="White"> Libros de actividades  </FONT>
+               </center>        
+              </td>
+
+              <td width="20%">
+
+                <input type="checkbox" class="checkboxGeneral" id="EncuestaLibrosPintarPadres" ng-true-value=1 ng-false-value=0 ng-model="EncuestaLibrosPintarPadres"><FONT face="Comic Sans MS" color="White"> Libros para pintar </FONT>
+ 
+              </td>
+
+              <td width="20%">
+
+                <input type="checkbox" class="checkboxGeneral" id="EncuestaLibrosCocinaPadres" ng-true-value=1 ng-false-value=0 ng-model="EncuestaLibrosCocinaPadres"><FONT face="Comic Sans MS" color="White"> Libros de cocina </FONT>
+       
+              </td>
+
+              <td width="20%">
+                <input type="checkbox" class="checkboxGeneral" id="EncuestaLibrosInteractivosPadres" ng-true-value=1 ng-false-value=0 ng-model="EncuestaLibrosInteractivosPadres"><FONT face="Comic Sans MS" color="White"> Libros interactivos </FONT>
+              </td> 
+
+              <td width="20%">
+                <input type="checkbox" class="checkboxGeneral" id="EncuestaLibrosConocidosPadres" ng-true-value=1 ng-false-value=0 ng-model="EncuestaLibrosConocidosPadres"><FONT face="Comic Sans MS" color="White"> Libros de personajes conocidos </FONT>
+              </td> 
+          </tr> 
+          <tr>
+              <td width="20%">
+
+                <input type="checkbox" class="checkboxGeneral" id="EncuestaLibrosCuentosPadres" ng-true-value=1 ng-false-value=0 ng-model="EncuestaLibrosCuentosPadres"><FONT face="Comic Sans MS" color="White"> Libros de cuentos </FONT>
+ 
+              </td>
+
+              <td width="20%">
+                <input type="checkbox" class="checkboxGeneral" id="EncuestaLibrosIlustradosPadres" ng-true-value=1 ng-false-value=0 ng-model="EncuestaLibrosIlustradosPadres"><FONT face="Comic Sans MS" color="White"> Libros ilustrados </FONT>
+       
+              </td>
+              <td width="20%">
+                <input type="checkbox" class="checkboxGeneral" id="EncuestaNovelasAdolescentesPadres" ng-true-value=1 ng-false-value=0 ng-model="EncuestaNovelasAdolescentesPadres"><FONT face="Comic Sans MS" color="White"> Novelas para adolescentes  </FONT>
+              </td>  
+
+               <td width="20%">
+                <input type="checkbox" class="checkboxGeneral" id="EncuestaSagasPadres" ng-true-value=1 ng-false-value=0 ng-model="EncuestaSagasPadres"><FONT face="Comic Sans MS" color="White"> Sagas  </FONT>
+              </td>
+
+              <td width="20%">
+                <input type="checkbox" class="checkboxGeneral" id="EncuestaOtrosLibrosPadres" ng-true-value=1 ng-false-value=0 ng-model="EncuestaOtrosLibrosPadres"><FONT face="Comic Sans MS" color="White"> Otros  </FONT>
+              </td>
+          </tr>                 
+      </table> 
+      <br>
+      <input type="text" id="EncuestaDescripcionOtrosLibrosDocente" placeholder="Ingrese otros Libros"  width= "70%" height="70%" ng-model="EncuestaDescripcionOtrosLibrosDocente" style="align:center;height:70%;width:70%;border:1px;font-size:16px" >
+
+
+    <br>
+    <b><FONT face="Comic Sans MS" color="Lime">¿Suele comprar libros para regalar? </FONT></b>
+    <br>
+    <select name="EncuestaRegalaLibrosPadres" id="EncuestaRegalaLibrosPadres" ng-model="EncuestaRegalaLibrosPadres" size="1" style="height:20%;width:20%;border:1px;font-size:16px"> 
+      <option selected value="">--Elige opcion--</option>
+      <OPTION VALUE="Si">Si</OPTION>                    
+      <OPTION VALUE="No">No</OPTION>                          
+    </select> 
+
+ </center>
+
+    <br>
+      <br>
+      <button id="AceptarEncuestaPadres" ng-model="AceptarEncuestaPadres" class="button button-assertive button-large button-block">Aceptar</button>
+
+  </div>
+
+  <div id="FinEncuesta">
+<center>
+  <H2><b><FONT face="Comic Sans MS" color="Lime">Fin de la Encuesta!</FONT></H2>
+  <br>
+  <b><FONT face="Comic Sans MS" color="Lime">Muchas gracias por su tiempo!.</FONT>
+</center>
+<br>
+      <br>
+      <button id="RealizarOtraEncuesta" ng-model="RealizarOtraEncuesta" class="button button-assertive button-large button-block">Realizar Otra Encuesta</button>
+  </div>
+
+  </ion-content>
+</ion-view>
+
+
